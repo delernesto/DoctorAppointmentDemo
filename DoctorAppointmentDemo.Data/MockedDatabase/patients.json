@@ -1,1 +1,38 @@
-﻿
+[
+  {
+    "IllnessType": 1,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "Ernest",
+    "Surname": "Bucks",
+    "Phone": null,
+    "Email": null,
+    "Id": 1,
+    "CreatedAt": "2025-08-24T02:21:23.6615979+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "IllnessType": 1,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "Er",
+    "Surname": "ew",
+    "Phone": null,
+    "Email": null,
+    "Id": 2,
+    "CreatedAt": "2025-08-24T02:22:46.5561369+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "IllnessType": 1,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "Ern",
+    "Surname": "Buck",
+    "Phone": null,
+    "Email": null,
+    "Id": 3,
+    "CreatedAt": "2025-08-24T02:24:28.2510873+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  }
+]

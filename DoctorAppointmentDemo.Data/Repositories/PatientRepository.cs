@@ -4,21 +4,21 @@ using MyDoctorAppointment.Domain.Entities;
 
 namespace MyDoctorAppointment.Data.Repositories
 {
-    public class AppointmentRepository : GenericRepository<Appointment>, IAppointmentRepository
+    public class PatientRepository : GenericRepository<Patient>, IPatientRepository
     {
         public override string Path { get; set; }
 
         public override int LastId { get; set; }
 
-        public AppointmentRepository()
+        public PatientRepository()
         {
             dynamic result = ReadFromAppSettings();
 
-            Path = result.Database.Appointments.Path;
-            LastId = result.Database.Appointments.LastId;
+            Path = result.Database.Patients.Path;
+            LastId = result.Database.Patients.LastId;
         }
 
-        public override void ShowInfo(Appointment appointment)
+        public override void ShowInfo(Patient patient)
         {
             Console.WriteLine(); // implement view of all object fields
         }
@@ -26,7 +26,7 @@ namespace MyDoctorAppointment.Data.Repositories
         protected override void SaveLastId()
         {
             dynamic result = ReadFromAppSettings();
-            result.Database.Appointments.LastId = LastId;
+            result.Database.Patients.LastId = LastId;
 
             File.WriteAllText(Constants.AppSettingsPath, result.ToString());
         }

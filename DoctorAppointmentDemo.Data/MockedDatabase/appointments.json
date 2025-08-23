@@ -1,0 +1,66 @@
+[
+  {
+    "Patient": {
+      "IllnessType": 1,
+      "AdditionalInfo": null,
+      "Address": null,
+      "Name": "Ernest",
+      "Surname": "Bucks",
+      "Phone": null,
+      "Email": null,
+      "Id": 1,
+      "CreatedAt": "2025-08-24T02:21:23.6615979+03:00",
+      "UpdatedAt": "0001-01-01T00:00:00"
+    },
+    "Doctor": {
+      "DoctorType": 1,
+      "Experience": 20,
+      "Salary": 0.0,
+      "Name": "Vasya",
+      "Surname": "Petrov",
+      "Phone": null,
+      "Email": null,
+      "Id": 2,
+      "CreatedAt": "2024-01-04T21:15:00.5742047+02:00",
+      "UpdatedAt": "0001-01-01T00:00:00"
+    },
+    "DateTimeFrom": "1222-11-11T11:11:00",
+    "DateTimeTo": "0001-01-01T00:00:00",
+    "Description": null,
+    "Id": 1,
+    "CreatedAt": "2025-08-24T02:25:17.3784552+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "Patient": {
+      "IllnessType": 1,
+      "AdditionalInfo": null,
+      "Address": null,
+      "Name": "Ernest",
+      "Surname": "Bucks",
+      "Phone": null,
+      "Email": null,
+      "Id": 1,
+      "CreatedAt": "2025-08-24T02:21:23.6615979+03:00",
+      "UpdatedAt": "0001-01-01T00:00:00"
+    },
+    "Doctor": {
+      "DoctorType": 1,
+      "Experience": 20,
+      "Salary": 0.0,
+      "Name": "Vasya",
+      "Surname": "Petrov",
+      "Phone": null,
+      "Email": null,
+      "Id": 2,
+      "CreatedAt": "2024-01-04T21:15:00.5742047+02:00",
+      "UpdatedAt": "0001-01-01T00:00:00"
+    },
+    "DateTimeFrom": "1111-11-11T11:11:00",
+    "DateTimeTo": "0001-01-01T00:00:00",
+    "Description": null,
+    "Id": 1,
+    "CreatedAt": "2025-08-24T02:26:18.7546318+03:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
+  }
+]

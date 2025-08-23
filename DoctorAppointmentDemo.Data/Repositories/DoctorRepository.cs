@@ -10,7 +10,7 @@ namespace MyDoctorAppointment.Data.Repositories
 
         public override int LastId { get; set; }
 
-        public AppointmentRepository()
+        public DoctorRepository()
         {
             dynamic result = ReadFromAppSettings();
 

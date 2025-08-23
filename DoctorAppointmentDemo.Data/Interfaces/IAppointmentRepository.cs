@@ -5,6 +5,7 @@ namespace MyDoctorAppointment.Data.Interfaces
 {
     public interface IAppointmentRepository : IGenericRepository<Appointment>
     {
-        // you can add more specific doctor's methods
+        
+        // you can add more specific appointment's methods
     }
 }
