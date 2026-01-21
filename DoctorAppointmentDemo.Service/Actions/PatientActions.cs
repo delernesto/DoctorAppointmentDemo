@@ -57,7 +57,7 @@ namespace MyDoctorAppointment
 
             foreach (var p in patients)
             {
-                Console.WriteLine($"Name: {p.Name} {p.Surname}, Age: {p.IllnessType}");
+                Console.WriteLine($"Name: {p.Name} {p.Surname}, IllnessType: {p.IllnessType}");
             }
         }
     }

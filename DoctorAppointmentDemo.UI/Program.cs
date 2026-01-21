@@ -38,12 +38,12 @@ namespace MyDoctorAppointment
                 Console.WriteLine("6. Show appointments");
 
                 Console.Write("Choose option: ");
-                string input = Console.ReadLine();
+                string ?input = Console.ReadLine();
 
                 if (int.TryParse(input, out int choice) && Enum.IsDefined(typeof(MenuOption), choice))
                 {
                     _option = (MenuOption)choice;
-                    break; // вихід з циклу
+                    break; 
                 }
                 else
                 {

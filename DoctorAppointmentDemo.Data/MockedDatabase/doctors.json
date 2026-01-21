@@ -70,5 +70,17 @@
     "Id": 7,
     "CreatedAt": "2025-08-24T02:05:40.8673499+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "DoctorType": 2,
+    "Experience": 0,
+    "Salary": 0.0,
+    "Name": "MAXIM",
+    "Surname": "AVDEEV",
+    "Phone": null,
+    "Email": null,
+    "Id": 8,
+    "CreatedAt": "2026-01-21T21:17:31.5057996+02:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
   }
 ]

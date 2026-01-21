@@ -3,7 +3,7 @@
 
 namespace MyDoctorAppointment.Data.Interfaces
 {
-    public interface IPatientRepository : IGenericRepository<Patient>
+    public interface IPatientRepository : IGenericRepositoryJson<Patient>
     {
         // you can add more specific doctor's methods
     }

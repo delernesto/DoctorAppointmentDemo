@@ -5,34 +5,34 @@ using Newtonsoft.Json;
 
 namespace MyDoctorAppointment.Data.Repositories
 {
-    public abstract class GenericRepository<TSource> : IGenericRepository<TSource> where TSource : Auditable
+    public abstract class GenericRepositoryJson<TSource> : IGenericRepositoryJson<TSource> where TSource : Auditable
     {
         public abstract string Path { get; set; }
 
         public abstract int LastId { get; set; }
 
-        public TSource Create(TSource source)
+        public TSource CreateJson(TSource source)
         {
             source.Id = ++LastId;
             source.CreatedAt = DateTime.Now;
 
-            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAll().Append(source), Formatting.Indented));
+            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAllJson().Append(source), Formatting.Indented));
             SaveLastId();
 
             return source;
         }
 
-        public bool Delete(int id)
+        public bool DeleteJson(int id)
         {
-            if (GetById(id) is null)
+            if (GetByIdJson(id) is null)
                 return false;
 
-            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAll().Where(x => x.Id != id), Formatting.Indented));
+            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAllJson().Where(x => x.Id != id), Formatting.Indented));
 
             return true;
         }
 
-        public IEnumerable<TSource> GetAll()
+        public IEnumerable<TSource> GetAllJson()
         {
             if (!File.Exists(Path))
             {
@@ -50,22 +50,22 @@ namespace MyDoctorAppointment.Data.Repositories
             return JsonConvert.DeserializeObject<List<TSource>>(json)!;
         }
 
-        public TSource? GetById(int id)
+        public TSource? GetByIdJson(int id)
         {
-            return GetAll().FirstOrDefault(x => x.Id == id);
+            return GetAllJson().FirstOrDefault(x => x.Id == id);
         }
 
-        public TSource Update(int id, TSource source)
+        public TSource UpdateJson(int id, TSource source)
         {
             source.UpdatedAt = DateTime.Now;
             source.Id = id;
 
-            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAll().Select(x => x.Id == id ? source : x), Formatting.Indented));
+            File.WriteAllText(Path, JsonConvert.SerializeObject(GetAllJson().Select(x => x.Id == id ? source : x), Formatting.Indented));
 
             return source;
         }
 
-        public abstract void ShowInfo(TSource source);
+        public abstract void ShowInfoJson(TSource source);
 
         protected abstract void SaveLastId();
 

@@ -4,7 +4,7 @@ using MyDoctorAppointment.Domain.Entities;
 
 namespace MyDoctorAppointment.Data.Repositories
 {
-    public class AppointmentRepository : GenericRepository<Appointment>, IAppointmentRepository
+    public class AppointmentRepository : GenericRepositoryJson<Appointment>, IAppointmentRepository
     {
         public override string Path { get; set; }
 
@@ -18,7 +18,7 @@ namespace MyDoctorAppointment.Data.Repositories
             LastId = result.Database.Appointments.LastId;
         }
 
-        public override void ShowInfo(Appointment appointment)
+        public override void ShowInfoJson(Appointment appointment)
         {
             Console.WriteLine(); // implement view of all object fields
         }

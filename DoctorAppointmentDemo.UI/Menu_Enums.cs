@@ -8,3 +8,8 @@
     AddAppointment = 5,
     ShowAppointments = 6
 }
+public enum SavingOption
+{
+    Json = 0,
+    XML = 1
+}

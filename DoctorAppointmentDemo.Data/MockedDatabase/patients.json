@@ -34,5 +34,17 @@
     "Id": 3,
     "CreatedAt": "2025-08-24T02:24:28.2510873+03:00",
     "UpdatedAt": "0001-01-01T00:00:00"
+  },
+  {
+    "IllnessType": 2,
+    "AdditionalInfo": null,
+    "Address": null,
+    "Name": "Maxim",
+    "Surname": "Avdeev",
+    "Phone": null,
+    "Email": null,
+    "Id": 2,
+    "CreatedAt": "2026-01-21T21:18:42.8605416+02:00",
+    "UpdatedAt": "0001-01-01T00:00:00"
   }
 ]

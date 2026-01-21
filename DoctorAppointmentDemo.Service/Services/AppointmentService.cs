@@ -16,27 +16,27 @@ namespace MyDoctorAppointment.Service.Services
 
         public Appointment Create(Appointment appointment)
         {
-            return _appointmentRepository.Create(appointment);
+            return _appointmentRepository.CreateJson(appointment);
         }
 
         public bool Delete(int id)
         {
-            return _appointmentRepository.Delete(id);
+            return _appointmentRepository.DeleteJson(id);
         }
 
         public Appointment? Get(int id)
         {
-            return _appointmentRepository.GetById(id);
+            return _appointmentRepository.GetByIdJson(id);
         }
 
         public IEnumerable<Appointment> GetAll()
         {
-            return _appointmentRepository.GetAll();
+            return _appointmentRepository.GetAllJson();
         }
 
         public Appointment Update(int id, Appointment appointment)
         {
-            return _appointmentRepository.Update(id, appointment);
+            return _appointmentRepository.UpdateJson(id, appointment);
         }
     }
 }
